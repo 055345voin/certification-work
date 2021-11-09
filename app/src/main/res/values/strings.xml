@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">cities of Krasnodar region</string>
+    <string name="toast">toast</string>
+    <string name="banner_image">banner_image</string>
+</resources>
