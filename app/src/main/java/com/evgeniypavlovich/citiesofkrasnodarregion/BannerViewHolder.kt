@@ -1,6 +1,7 @@
 package com.evgeniypavlovich.citiesofkrasnodarregion
 
 import android.annotation.SuppressLint
+import android.view.Gravity
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -15,15 +16,21 @@ class BannerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val bannerDescriptionTextView: TextView = itemView.findViewById(R.id.description_text_view)
         val bannerPopulation: Int = banner.population
 
+
         bannerImageView.setImageDrawable(itemView.context.getDrawable(banner.imageRes))
         bannerDescriptionTextView.text = banner.description
 
+
         itemView.setOnClickListener {
-            Toast.makeText(
+           val toast = Toast.makeText(
                 itemView.context,
                 bannerDescriptionTextView.text as String + " population " +
-                        bannerPopulation + " people", Toast.LENGTH_LONG
-            ).show()
+                        bannerPopulation + " people", Toast.LENGTH_SHORT)
+            val location :IntArray=IntArray(2)
+            itemView.getLocationOnScreen(location)
+            toast.setGravity(Gravity.TOP,0,location[1])
+            toast.show()
+
         }
     }
 }

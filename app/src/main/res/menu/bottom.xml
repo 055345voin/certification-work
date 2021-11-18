@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/to_learn_more"
+        android:enabled="true"
+        android:icon="@drawable/to_learn_more_icon"
+        android:title="@string/to_learn_more" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about_icon"
+        android:title="@string/developers" />
+
+    <item
+        android:id="@+id/description"
+        android:icon="@drawable/description"
+        android:title="Description" />
+
+
+</menu>

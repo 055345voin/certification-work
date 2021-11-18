@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/banner_card_list_item.xml" value="0.16" />
+        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/activity_about.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/banner_card_list_item.xml" value="0.5" />
+        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/fragment_about.xml" value="0.2" />
+        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/fragment_info.xml" value="0.5" />
         <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/layout/user_list_item.xml" value="0.2" />
+        <entry key="..\:/Users/Evgeniy/AndroidStudioProjects/citiesofKrasnodarregion2/app/src/main/res/menu/bottom.xml" value="0.5" />
       </map>
     </option>
   </component>
