@@ -3,10 +3,13 @@ package com.evgeniypavlovich.citiesofkrasnodarregion
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
+private const val LAST_SELECTED_ITEM = "item"
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,6 +45,9 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+        bottomMenu.selectedItemId =
+            savedInstanceState?.getInt(LAST_SELECTED_ITEM) ?: R.id.description
+
         val bannerList: List<Banner> = listOf(
             Banner(R.drawable.banner_images_krasnodar, "Krasnodar", 948827),
             Banner(R.drawable.banner_images_sochi, "Sochi", 432322),
@@ -57,9 +63,14 @@ class MainActivity : AppCompatActivity() {
         val usersRecyclerView: RecyclerView = findViewById(R.id.users_recycler_view)
         usersRecyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        //usersRecyclerView.adapter = BannerAdapter(bannerList)
+        usersRecyclerView.adapter = BannerAdapter(bannerList)
 
 
+    }
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        outState.putInt(LAST_SELECTED_ITEM, bottomMenu.selectedItemId)
+        super.onSaveInstanceState(outState, outPersistentState)
     }
 }
 
