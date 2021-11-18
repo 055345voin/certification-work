@@ -57,9 +57,7 @@ class MainActivity : AppCompatActivity() {
         val usersRecyclerView: RecyclerView = findViewById(R.id.users_recycler_view)
         usersRecyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        //usersRecyclerView.adapter = BannerAdapter(bannerList)
-
-
+        usersRecyclerView.adapter = BannerAdapter(bannerList)
     }
 }
 
